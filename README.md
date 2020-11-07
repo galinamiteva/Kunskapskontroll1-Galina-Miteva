@@ -1,7 +1,7 @@
 # Kunskapskontroll1-Galina-Miteva
- Kunskapskontroll DOM
-Inlämning
-Sex olika interaktioner för sex olika ändringar. 
+ # Kunskapskontroll DOM
+    #Inlämning
+      #Sex olika interaktioner för sex olika ändringar. 
 
 1. En knapp som återställer allt till originalutseendet-knappen 'Reset'
 2. Byt ut minst ett foto-när man är över foto-2 bytas den.
