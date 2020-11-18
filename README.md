@@ -3,6 +3,8 @@
     #Inlämning
       #Sex olika interaktioner för sex olika ändringar. 
 
+Beskrivningen för användaren ligger efter tecknet -->> .
+
 1. En knapp som återställer allt till originalutseendet
     -->> den högra knappen 'Reset'
 
