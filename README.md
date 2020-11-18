@@ -10,13 +10,13 @@
     -->>när man är över foto-2 bytas den.
 
 3. Ändra bakgrundsfärg på minst ett element
-    -->>när man klickar på den vänstre buttonen bytas random bakgrundsfärgen på art-1, sampt  h3 och p и атр-1 försvinner , eftersom de har samma färg.
+    -->>när man klickar på den vänstre knappen bytas random bakgrundsfärgen på art-1, sampt  h3 och p i atr-1 försvinner , eftersom de har samma färg.
 
 4. Ändra text på minst ett element:
-  -->>när man klickar på den vänstre buttonen texten på h2 och p i atr-2 ska bytas, sampt texten på h2 i art-1.
+  -->>när man klickar på den vänstre knappen texten på h2 och p i atr-2 ska bytas, sampt texten på h2 i art-1.
 
 5. Ändra färg på minst en knapp:
-  -->>när man dublekllickar på den medel knappen bytas random backgroundcolor på den knappen .
+  -->>när man dubleklickar på den medel knappen bytas random backgroundcolor på den knappen .
 
 6. Ta bort minst 1 element (Måste läggas till igen när man trycker på återställningsknappen)
   -->> när man entered i logon försvunner icon-bagen uppe i höger.
