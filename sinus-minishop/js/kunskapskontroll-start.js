@@ -1,5 +1,5 @@
 
-/*1.En knapp som återställer allt till originalutseendet *************************************************************************/
+/*1. - En knapp som återställer allt till originalutseendet *************************************************************************/
     //återställ knappen
     let btns = document.querySelectorAll('button');
     let reset= btns[2];
@@ -11,7 +11,7 @@
     let knapp1=btns[0];
     knapp1.addEventListener('click', function(event){
         changeRandom();
-        changeH2inArt2()       
+        changeText()       
     });
     
     function resetAll(){
@@ -40,15 +40,13 @@
         //5. - färg på knapp 2 är tillbacka
         knapp2.style.backgroundColor='#222222';  
         //6. - icon bag, som var removed är tilbacka 
-        iconBag!=true;
-        if (iconBag){                                 
-        let iconBag = document.createElement('img');
-        let navAlla= document.querySelectorAll('header a');
-        navAlla[2].insertAdjacentElement('afterend',iconBag);
-        iconBag.setAttribute('src',"img/icon-bag.svg");
-        iconBag.setAttribute('alt',"cart");   
-        }
-    
+        let navigation = document.querySelector('nav')
+            if (navigation.childElementCount==3){                                 
+            let iconBag = document.createElement('img');
+            navigation.children[2].insertAdjacentElement('afterend',iconBag);
+            iconBag.setAttribute('src',"img/icon-bag.svg");
+            iconBag.setAttribute('alt',"cart");   
+            }
         //7. - remove lista av Distributors i footer
         if(sectionFooter.children[3]){
             sectionFooter.children[3].remove();
@@ -57,7 +55,7 @@
     }
     
     /* 4. Ändra text på minst ett element-(h2 i art-2), (p i art-2), (h2 i art-1)  ************************************************************************/
-    function changeH2inArt2(){
+    function changeText(){
         let h2 =document.querySelector('.art-2 h2');
         let paragraph2=document.querySelector('.art-2 p');
         h2.innerText='Sinus Hoodie in Fire'; 
@@ -93,8 +91,7 @@
     //sätt event listener på andra figure
     let figure2=document.querySelector('.art-2 figure');
     
-    figure2.addEventListener('mouseover', function(event){
-        //traversing till img2
+    figure2.addEventListener('mouseover', function(event){    
         let img2= figure2.firstElementChild;
         img2.setAttribute('src','https://images.unsplash.com/photo-1583239527279-b5e8a74266ac?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80');
         img2.style.width='100%';
@@ -102,7 +99,7 @@
                
     });    
     
-    /* 5. Ändra färg på minst en knapp  ***********************************************************************************************************/
+    /* 5. Ändra färg på minst en knapp  -den andra button *******************************************************************************************/
     //sätt event listener för andra knappen
     let knapp2=btns[1];
     knapp2.addEventListener('dblclick', function(event){
@@ -111,16 +108,18 @@
     });
     
     /*6. Ta bort minst 1 element (Måste läggas till igen när man trycker på återställningsknappen) ************************************************/
+        //ta bort icon bag när man entered i logon
     let logoImage = document.querySelector('header img');
-    let iconBag = document.querySelector('nav img');
-    logoImage.addEventListener('mouseenter', function(e){                
+    
+    logoImage.addEventListener('mouseenter', function(e){
+        let iconBag = document.querySelector('nav img'); 
         if (iconBag){
         iconBag.remove();
     }
     })
     
-    
     /*7.Lägg till en lista var som helst i DOMen med  flera li element och varje li element ska ha en synlig border ********************************/
+        //jag läg till en lista med distributors
     var sectionFooter=document.querySelector('footer section');
     let contactDistributors=sectionFooter.firstElementChild.lastElementChild;
     
